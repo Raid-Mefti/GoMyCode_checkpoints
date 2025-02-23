@@ -1,0 +1,20 @@
+.choose_class {
+    width: 120px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: rgb(39, 39, 39);
+    color: rgb(237, 237, 237);
+    font-size: 18px;
+    font-weight: bold;
+}
+.choose_class_dropdown {
+    display: none;
+}
+.choose_class:hover + .choose_class_dropdown {
+    display: flex;
+    flex-direction: column;
+}
+/* */
+.select_fighter1 {
+    display: flex;
+}

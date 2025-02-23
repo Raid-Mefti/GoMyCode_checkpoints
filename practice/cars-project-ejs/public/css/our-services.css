@@ -1,0 +1,38 @@
+.our-services-section {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: var(--global-padding);
+}
+.white {
+    color: white;
+}
+.services-card-div {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 0px;
+}
+.services-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.services-card h4 {
+    font-size: 1.25rem;
+}
+.services-card p {
+    width: 38ch;
+    margin: 0;
+    padding: 0;
+    color: rgba(214, 214, 214, 1);
+    font-size: 1rem;
+}
+.services-card img {
+    background-color: white;
+    width: 48px;
+    padding: 12px;
+    border-radius: 50%;
+}

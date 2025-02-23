@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figlet in HTML</title>
+    <style>
+        .ascii-art {
+            font-family: monospace;
+            white-space: pre-wrap;
+            line-height: 1.2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Figlet in HTML</h1>
+    <div>
+        <input type="text" id="input-text" placeholder="Enter text" />
+        <button id="generate">Generate ASCII Art</button>
+    </div>
+    <div id="ascii" class="ascii-art"></div>
+
+    <!-- Include Figlet -->
+    <script src="
+    https://cdn.jsdelivr.net/npm/figlet@1.8.0/lib/figlet.min.js
+    "></script>
+    <script>
+        document.getElementById('generate').addEventListener('click', () => {
+            const text = document.getElementById('input-text').value;
+
+            // Generate ASCII art using Figlet
+            figlet.text(text, { font: 'Standard' }, (err, result) => {
+                if (err) {
+                    console.error('Error generating ASCII art:', err);
+                    return;
+                }
+                document.getElementById('ascii').innerText = result;
+            });
+        });
+    </script>
+</body>
+</html>

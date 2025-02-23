@@ -1,0 +1,38 @@
+.car_collection_texts {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--card-color);
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    padding-top: 50px;
+}
+.car_collection_texts_div {
+    width: 75ch;
+}
+.car_collection_texts h3 {
+    font-size: 3rem;
+}
+.car_collection_texts p {
+    font-size: 1.125rem;
+}
+.car_collection_div_buttons {
+    display: flex;
+    gap: 30px;
+}
+.car_collection_texts button {
+    font-size: 1.125rem;
+    padding: 12px 19px;
+    border-radius: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    background-color: white;
+}
+.car_collection_texts button.black {
+    background-color: black;
+    color: white;
+}

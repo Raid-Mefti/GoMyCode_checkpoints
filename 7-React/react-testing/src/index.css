@@ -1,0 +1,15 @@
+@import "tailwindcss";
+.ripple-effect {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white ripple */
+    transform: scale(0);
+    animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(2); /* Scale the ripple to 2x its size */
+        opacity: 0; /* Fade out the ripple */
+    }
+}

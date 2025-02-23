@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="/public/css/car_collection.css" />
+
+<div class="car_collection_texts">
+    <div class="car_collection_texts_div">
+        <h3>Our Impressive Collection of Cars</h3>
+        <p>Ranging from elegant sedans to powerful sports cars, all carefully selected to provide our customers with the ultimate driving experience.</p>    
+    </div>
+    <div class="car_collection_div_buttons">
+        <button class="black">Popular car</button>
+        <button>Luxury Car</button>
+        <button>Vintage car</button>
+        <button>Family car</button>
+        <button>Off-road car</button>
+    </div>
+</div>
+
+<section class="car_card_mainDiv_section">
+<div class="car_card_mainDiv">
+<% carCards.forEach((carCard)=> { %>
+    <div class="card_div">
+        <img src="<%= carCard.image%>" alt="<%= carCard.title%>" />
+        <div>
+            <h4><%= carCard.title%></h4>
+            <div class="price_div">
+                <h3><%= carCard.price%></h3>
+                <p>/day</p>    
+            </div>
+            <div class="icons_div">
+                <div>
+                    <img src="/public/images/wheel.svg" alt="">
+                    <p><%= carCard.kilometrage%></p>    
+                </div>
+                <div>
+                    <img src="/public/images/manual-gearbox.svg" alt="">
+                    <p><%= carCard.type%></p>    
+                </div>
+                <div>
+                    <img src="/public/images/persons.svg" alt="">
+                    <p><%= carCard.persons%> Persons</p>    
+                </div>
+                <div>
+                    <img src="/public/images/gas-station.svg" alt="">
+                    <p><%= carCard.engine%></p>    
+                </div>
+            </div>
+            <button>Rent now</button>
+
+        </div>
+    </div>
+<%  }) %>
+</div>
+<button class="btn_car_collection btn btn-primary">See all cars<span class="ic--round-arrow-forward icon"></span></button>
+
+</section>
+
+
+
+
+

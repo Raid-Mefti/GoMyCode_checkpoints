@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Popular Cars</title>
+		<link rel="stylesheet" href="/public/css/style.css" />
+		<link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+	</head>
+	<body>
+		<header>
+			<img src="/public/images/classicMotor_logo.png" alt="">
+			<h1>Classic Motors</h1>
+			<navbar>
+				<ul>
+					<li>
+						<div>
+							<a href="/fast-cars">Fast cars</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="/popular-cars">Popular cars</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="/trucks">Trucks</a>
+						</div>
+					</li>
+				</ul>
+			</navbar>
+			<aside>
+				<div>
+					<a href="">About us</a>
+				</div>
+				<div>
+					<a href="">Contact us</a>	
+				</div>
+			</aside>
+
+		</header>
+
+
+		<main>
+			<div class="hero_section">
+				<img class="mySlides" src="/public/images/cars/meritt-thomas-SWt1dHle1eA-unsplash.jpg" alt="">
+				<img class="mySlides" src="/public/images/cars/karla-alexander-2ct89Ann_lk-unsplash.jpg" alt="">
+
+			</div>
+
+			<article>
+				<h2>Drive the classics</h2>
+				<div class="article_mainDiv">
+					<div class="car_divs right">
+						<img src="/public/images/cars/karla-alexander-2ct89Ann_lk-unsplash.jpg" alt="">
+						<div>
+							<p class="car_name"><strong>1979 Chevrolet El Camino</strong></p>
+							<p>3.136$</p>
+						</div>
+					</div>
+					<div class="description_div">
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit asperiores modi sapiente repellat voluptatibus quas.</p>
+						<button class="seeMore_button">See more</button>
+					</div>
+					<div class="description_div">
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit asperiores modi sapiente repellat voluptatibus quas.</p>
+						<button class="seeMore_button">See more</button>
+					</div>					
+					<div class="car_divs left">
+						<img src="/public/images/cars/vita-leonis-36dXVB6B6uU-unsplash.jpg" alt="">
+						<div>
+							<p class="car_name"><strong>Chevrolet Impala SS 427</strong></p>
+							<p>27.450$</p>
+						</div>
+					</div>
+					<div class="car_divs right">
+						<img src="/public/images/cars/courtney-cook-gcGicCJHs8s-unsplash.jpg" alt="">
+						<div>
+							<p class="car_name"><strong>1969 Dodge Dart M Code</strong></p>
+							<p>31.750$</p>
+						</div>
+					</div>
+					<div class="description_div">
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit asperiores modi sapiente repellat voluptatibus quas.</p>
+						<button class="seeMore_button">See more</button>
+					</div>
+					<div class="description_div">
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit asperiores modi sapiente repellat voluptatibus quas.</p>
+						<button class="seeMore_button">See more</button>
+					</div>
+					<div class="car_divs left">
+						<img src="/public/images/cars/robin-vet-q6LFMQ6wVZ0-unsplash.jpg" alt="">
+						<div>
+							<p class="car_name"><strong>1973 Ferrari Dino</strong></p>
+							<p>180.000$</p>
+						</div>
+					</div>
+					<div class="car_divs right">
+						<img src="/public/images/cars/bradley-dunn-qijkjkJm63c-unsplash.jpg" alt="">
+						<div>
+							<p class="car_name"><strong>1964 Volkswagen Microbus</strong></p>
+							<p>40.000$</p>
+						</div>
+					</div>
+					<div class="description_div">
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit asperiores modi sapiente repellat voluptatibus quas.</p>
+						<button class="seeMore_button">See more</button>
+					</div>
+					<div class="description_div">
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit asperiores modi sapiente repellat voluptatibus quas.</p>
+						<button class="seeMore_button">See more</button>
+					</div>
+					<div class="car_divs left">
+						<img src="/public/images/cars/meritt-thomas-SWt1dHle1eA-unsplash.jpg" alt="">
+						<div>
+							<p class="car_name"><strong>1979 Chevrolet El Camino</strong></p>
+							<p>3.136$</p>
+						</div>
+					</div>
+				</div>
+			</article>
+		
+
+			<section class="restoration_div">
+				<div class="restoration_img_div">
+					<img src="/public/images/Restoration.jpg" alt="">
+					<div class="text_div restoration">
+						<h2>Restoration</h2>
+						<p>We save abandonned cars, fix them and bring them back to the road where they belong.</p>
+						<button class="seeMore_button">See more</button>
+					</div>
+				</div>
+			</section>
+			<section class="restoration_div">
+				<div class="restoration_img_div events_div">
+					<img src="/public/images/carevents.jpg" alt="">
+					<div class="text_div events">
+						<h2>Events</h2>
+						<p>Every year, we organize fun showroom and racing events for all classic cars enthusiasts to attend.</p>
+						<button class="seeMore_button">See more</button>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+
+
+
+
+
+		<script src="/public/js/script.js"></script>
+		<script>
+			console.log("hello from the server");
+		</script>
+
+<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+	
+	function plusDivs(n) {
+	showDivs(slideIndex += n);
+	}
+	
+	function currentDiv(n) {
+	showDivs(slideIndex = n);
+	}
+	
+	function showDivs(n) {
+	var i;
+	var x = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("demo");
+	if (n > x.length) {slideIndex = 1}
+	if (n < 1) {slideIndex = x.length}
+	for (i = 0; i < x.length; i++) {
+	x[i].style.display = "none";  
+	}
+	for (i = 0; i < dots.length; i++) {
+	dots[i].className = dots[i].className.replace(" w3-white", "");
+	}
+	x[slideIndex-1].style.display = "block";  
+	dots[slideIndex-1].className += " w3-white";
+	}
+	</script>
+	</body>
+</html>

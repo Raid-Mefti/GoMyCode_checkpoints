@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.buttons_div{
+    display: flex;
+    justify-content: center;
+}
+
+.fighter {
+    text-align: center;
+}
+
+.fighter img {
+    width: 300px; 
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20%;
+    margin-bottom: 10px;
+}
+.fighter2 .flipped {
+    transform: scaleX(-1);
+}
+
+.arrow {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.arrow:hover {
+    background-color: #0056b3;
+}
+
+.start-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.start-button:hover {
+    background-color: #218838;
+}
+
+.match-area {
+    text-align: center;
+}

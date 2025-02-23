@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    /*background-color: rgb(240, 240, 240);*/
+    font-family: "Rubik", sans-serif;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 30px 30px 30px;
+}
+ul {
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+}
+header > div {
+    display: flex;
+}
+header > div > a {
+    gap: 100px;
+}
+header a {
+    color: rgb(105, 42, 0);
+    font-size: 30px;
+    text-decoration: none;
+}
+header div {
+    background-color: rgb(255, 103, 0);
+    height: 80px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+aside {
+    display: flex;
+    gap: 50px;
+}
+
+header div:hover {
+    background-color: orange;
+}
+header div:hover a {
+    color: rgb(112, 73, 0);
+}
+header img {
+    width: 200px;
+}
+
+/* ----------------------------- */
+
+.hero_section {
+    width: 100%;
+    overflow: hidden;
+}
+.hero_section img {
+    width: 100%;
+}
+.seeMore_button {
+    width: 164.47px;
+    height: 54.82px;
+    left: 1472.55px;
+    top: 3049.27px;
+
+    background: #1e2222;
+    border-radius: 32.8939px;
+    color: rgb(240, 240, 240);
+    font-size: 22px;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+article h2 {
+    font-size: 60px;
+}
+article div {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.article_mainDiv {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.car_divs {
+    border-radius: 30px;
+    overflow: hidden;
+    border: 2px solid rgb(255, 103, 0);
+    background-color: white;
+}
+.car_divs div {
+    display: flex;
+    flex-direction: column;
+}
+.car_name {
+    font-size: 26px;
+    margin: 0;
+}
+.car_divs div p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+article div div img {
+    width: 100%;
+    margin: 0;
+}
+.description_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.8s ease-in;
+    z-index: -1;
+    color: rgb(105, 42, 0);
+    border: 2px solid rgb(255, 103, 0);
+    text-align: center;
+    border-radius: 30px;
+    font-size: 24px;
+    padding: 30px;
+}
+.description_div:has(+ .left) {
+    transform: translateX(200px);
+}
+.right + .description_div {
+    transform: translateX(-200px);
+}
+.car_divs.right:hover + .description_div {
+    transform: translateX(0px);
+    opacity: 1;
+    visibility: visible;
+}
+.description_div:has(+ .car_divs.left:hover) {
+    transform: translateX(0px);
+    opacity: 1;
+    visibility: visible;
+}
+
+.description_div p {
+    font-size: 32px;
+}
+
+/*----------------------*/
+
+.restoration_div + .events_div {
+    width: 100%;
+    margin-top: 100px;
+    background: #e7e7e7;
+}
+
+.restoration_img_div {
+    height: 800px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.events_div {
+    flex-direction: row-reverse;
+}
+.restoration_img_div img {
+    width: 1005px;
+    height: 673px;
+    left: 237px;
+    top: 2605px;
+}
+.text_div {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 50px 0 50px;
+
+    width: 620px;
+    height: 526px;
+    left: 1244px;
+    top: 2678px;
+}
+.text_div.restoration {
+    border-radius: 0px 32px 32px 0px;
+    border: 2px solid rgb(255, 103, 0);
+    border-left: none;
+}
+.text_div.events {
+    border: 2px solid rgb(255, 103, 0);
+    border-right: none;
+    border-radius: 32px 0px 0px 32px;
+}
+.restoration_img_div div p {
+    font-size: 26px;
+    margin: 0;
+    padding: 0;
+}
+.restoration_img_div div h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}

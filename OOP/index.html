@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game Simulator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="fighter fighter1">
+			<img id="fighter1-img" src="images/raid_idl.gif" alt="Fighter 1">
+			<div class="buttons_div">
+				<button class="arrow left" onclick="changeFighter('fighter1', -1)">&lt;</button>
+				<p id="fighter1-name">Raid</p>
+				<button class="arrow right" onclick="changeFighter('fighter1', 1)">&gt;</button>	
+			</div>
+			<select id="fighter1-class" onchange="setClass('fighter1')">
+				<option value="warrior">Warrior</option>
+				<option value="mage">Mage</option>
+			</select>
+        </div>
+
+        <div class="match-area">
+            <button class="start-button" onclick="startMatch()">Start Match</button>
+        </div>
+
+        <div class="fighter fighter2">
+			<img id="fighter2-img" src="images/moh_idl.gif" alt="Fighter 2" class="flipped">
+			<div class="buttons_div">
+				<button class="arrow left" onclick="changeFighter('fighter2', -1)">&lt;</button>
+				<p id="fighter2-name">Moh</p>
+				<button class="arrow right" onclick="changeFighter('fighter2', 1)">&gt;</button>	
+			</div>
+			<select id="fighter2-class" onchange="setClass('fighter2')">
+				<option value="warrior">Warrior</option>
+				<option value="mage">Mage</option>
+			</select>
+        </div>
+    </div>
+
+
+    <script src="exercise.js"> </script>
+</body>
+</html>

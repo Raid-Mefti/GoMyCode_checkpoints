@@ -1,0 +1,17 @@
+{
+  "name": "external_libraries",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "start": "node ./script.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cat": "^0.2.0",
+    "lodash": "^4.17.21",
+    "nodemon": "^3.1.9"
+  }
+}

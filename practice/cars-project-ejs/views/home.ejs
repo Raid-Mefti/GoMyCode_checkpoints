@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>LUXEDRIVE</title>
+		<link rel="stylesheet" href="/public/css/style.css" />
+	</head>
+	<body>
+		<%- include('components/hero'); %>
+		<main>
+			<link rel="stylesheet" href="/public/css/brand.css" />
+			<%- include('components/booking-form'); %> <%- include('components/brands'); %> <%- include('components/body-type'); %>
+			<%- include('components/car-collection', {title:carCards[0].title,image:carCards[0].image}); %>
+			<%- include('components/how_it_works'); %>
+			<%- include('components/our-services'); %>
+			<%- include('components/customers'); %>
+
+		</main>
+		<footer></footer>
+	</body>
+</html>
