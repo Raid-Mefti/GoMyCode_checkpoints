@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "tsx": "^4.19.3"
+  },
+  "name": "typescript-first-session",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc ./index.ts",
+    "dev:manual": "tsc ./index.ts & node ./index.js",
+    "dev:tsx": "tsx watch ./index.ts",
+    "dev": "nodemon --ext .ts,.tsx --exec \"tsc ./index.ts & node ./index.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
