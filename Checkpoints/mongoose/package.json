@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "mongoose": "^8.11.0"
+  },
+  "name": "mongoose",
+  "version": "1.0.0",
+  "main": "index.js",
+"scripts": {
+  "start": "node index.js",
+  "create-person": "node createPerson.js",
+  "create-many-people": "node createManyPeople.js",
+  "find-by-name": "node findPeopleByName.js",
+  "find-by-food": "node findPersonByFood.js",
+  "find-by-id": "node findPersonById.js",
+  "update-foods": "node updatePersonFoods.js",
+  "update-age": "node updatePersonAge.js",
+  "delete-by-id": "node deletePersonById.js",
+  "delete-by-name": "node deletePeopleByName.js",
+  "chain-query": "node chainQuery.js"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
