@@ -20,4 +20,24 @@ CREATE TABLE Orders(
 ALTER TABLE Customer
 ADD Category VARCHAR(20);
 ALTER TABLE Orders
-ADD OrderDate Date DEFAULT sysdate();
+ADD OrderDate Date;
+INSERT INTO Product (column1, column2, column3, column4)
+VALUES (
+        "P01",
+        "Samsung Galaxy S20",
+        3299,
+        "Smartphone"
+    );
+INSERT INTO Product (column1, column2, column3, column4)
+VALUES ("P02", "ASUS Notebook", 4599, "PC");
+INSERT INTO Customer (column1, column2, column3)
+VALUES ("CO1", "ALI", 71321009);
+INSERT INTO Customer (column1, column2, column3)
+VALUES ("CO2", "ASMA", 77345823);
+INSERT INTO Orders (column1, column2, column3, column4)
+VALUES (
+        "P01",
+        "Samsung Galaxy S20",
+        3299,
+        "Smartphone"
+    );
