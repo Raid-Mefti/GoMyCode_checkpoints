@@ -1,43 +1,29 @@
-use gomycode;
-CREATE TABLE Customer(
-    customer_id VARCHAR(20) PRIMARY KEY,
-    customer_name VARCHAR(20) NOT NULL,
-    customer_tel INT
-);
-CREATE TABLE Product(
-    product_id VARCHAR(20) PRIMARY KEY,
-    product_name VARCHAR(20) NOT NULL,
-    price INT CHECK (price > 0)
-);
-CREATE TABLE Orders(
-    customer_id VARCHAR(20),
-    product_id VARCHAR(20),
-    FOREIGN KEY (customer_id) REFERENCES Customer(customer_id),
-    FOREIGN KEY (product_id) REFERENCES Product(product_id),
-    total_amount Float,
-    quantity INT
-);
-ALTER TABLE Customer
-ADD Category VARCHAR(20);
-ALTER TABLE Orders
-ADD OrderDate Date;
-INSERT INTO Product (column1, column2, column3, column4)
+INSERT INTO Product (product_id, product_name, Category, price)
 VALUES (
-        "P01",
+        "PO1",
         "Samsung Galaxy S20",
-        3299,
-        "Smartphone"
-    );
-INSERT INTO Product (column1, column2, column3, column4)
-VALUES ("P02", "ASUS Notebook", 4599, "PC");
-INSERT INTO Customer (column1, column2, column3)
-VALUES ("CO1", "ALI", 71321009);
-INSERT INTO Customer (column1, column2, column3)
-VALUES ("CO2", "ASMA", 77345823);
-INSERT INTO Orders (column1, column2, column3, column4)
+        "Smartphone",
+        3299
+    ),
+    ("PO2", "ASUS Notebook", "PC", 4599);
+INSERT INTO Customer (customer_id, customer_name, customer_tel)
+VALUES ("CO1", "ALI", 71321009),
+    ("CO2", "ASMA", 77345823);
+INSERT INTO Orders (
+        customer_id,
+        product_id,
+        quantity,
+        total_amount
+    )
 VALUES (
-        "P01",
-        "Samsung Galaxy S20",
-        3299,
-        "Smartphone"
-    );
+        "CO1",
+        "PO1",
+        2,
+        9198
+    ),
+    (
+        "CO2",
+        "PO2",
+        1,
+        3299
+    )

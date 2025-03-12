@@ -17,7 +17,8 @@ CREATE TABLE Orders(
     total_amount Float,
     quantity INT
 );
-ALTER TABLE Customer
+* /
+ALTER TABLE Product
 ADD Category VARCHAR(20);
 ALTER TABLE Orders
-ADD OrderDate Date DEFAULT sysdate();
+ADD OrderDate Datetime DEFAULT current_timestamp;
